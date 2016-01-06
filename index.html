@@ -30,6 +30,28 @@
         <section id="main-content">
           <h3>
 <a id="welcome-to-satyendra-kumar-singhs-github-page" class="anchor" href="#welcome-to-satyendra-kumar-singhs-github-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Satyendra Kumar Singh's Github Page.</h3>
+
+<h2>
+<a id="script-to-change-the-link-dynamically" class="anchor" href="#script-to-change-the-link-dynamically" aria-hidden="true"><span class="octicon octicon-link"></span></a>Script to change the link dynamically</h2>
+
+<p><code>$(document).ready(function(e){
+      $('.search-panel .dropdown-menu').find('a').click(function(e) {
+            e.preventDefault();
+            var param = $(this).attr("href").replace("#","");
+            var concept = $(this).text();
+            $('.search-panel span#search_concept').text(concept);
+            $('.input-group #search_param').val(param);
+        });
+      });</code></p>
+
+<h2>
+<a id="style-for-scrollbar-in-dropdown" class="anchor" href="#style-for-scrollbar-in-dropdown" aria-hidden="true"><span class="octicon octicon-link"></span></a>Style for Scrollbar in Dropdown</h2>
+
+<p><code>.scrollable-dropdown{
+    height: auto;
+    max-height:320px;  /* Increase / Decrease value as per your need */
+    overflow-x: hidden;
+}</code></p>
         </section>
 
         <aside id="sidebar">
